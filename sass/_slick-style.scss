@@ -1,0 +1,45 @@
+
+/* =======================================================
+
+	slick style
+
+======================================================== */
+
+.slick01 {
+  margin: 0 auto;
+}
+
+//フォーカスした時の枠線を消す
+.slick-slide {
+  outline: none;
+}
+
+.slick_img {
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider{
+  margin: 100px auto;
+  width: 80%;
+}
+.slider img{
+  height: auto;
+  width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+  background-color: dimgray;
+}
+
+.slick_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dots {
+  position: relative;
+  text-align: center;
+  margin: 24px 0;
+}

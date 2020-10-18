@@ -1,0 +1,49 @@
+
+/* =======================================================
+
+	effect
+
+======================================================== */
+
+.effect_block  {
+  background-image: url(../img/ferrisWheel.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.noize {
+  opacity: .04;
+  height: 100vh;
+  background: url(../img/noise.gif);
+}
+
+.effect {
+
+  .text-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:100px 50px;
+    width: 30%;
+    background-color: #FFF;
+    opacity: 0.7;
+
+    h1 {
+      color: #702e68;
+      font-size: 6.0rem;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+}

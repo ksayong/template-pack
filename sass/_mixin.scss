@@ -1,0 +1,109 @@
+
+/* =======================================================
+
+  アンダーラインアニメーション
+
+  $type（タイプ）
+  $dir（方向）
+  $weight（ラインウェイト）
+  $color（ラインカラー）
+
+  ＜↓includeの書き方＞
+
+  .example01　{
+    @include hover-underline('fade', 'top', 4px, #aaa);
+  }
+
+======================================================== */
+
+@mixin hover-underline($type: fade, $dir: null, $weight: 2px, $color: #000) {
+  @if $dir == null {
+    @if $type == fade {
+      $dir: 'top';
+    } @else if $type == slide {
+      $dir: 'center';
+    }
+  }
+
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  &::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: $weight;
+    background: $color;
+    @if $type == fade {
+      transition: .3s;
+      opacity: 0;
+      visibility: hidden;
+      @if $dir == bottom {
+        bottom: $weight * -4;
+      } @else {
+        bottom: $weight;
+      }
+    } @else if $type == slide {
+      bottom: $weight * -2;
+      transform: scale(0, 1);
+      transition: transform .3s;
+      @if $dir == left-right or $dir == right-in-left {
+        transform-origin: left top;
+      } @else if $dir == right-left or $dir == left-in-right {
+        transform-origin: right top;
+      } @else {
+        transform-origin: center top;
+      }
+    }
+  }
+  &:hover::after {
+    @if $type == fade {
+      bottom: $weight * -2;
+      opacity: 1;
+      visibility: visible;
+    } @else if $type == slide {
+      @if $dir == left-in-right {
+        transform-origin: left top;
+      } @else if $dir == right-in-left {
+        transform-origin: right top;
+      }
+      transform: scale(1, 1);
+    }
+  }
+}
+
+// Fade Top
+.example01 {
+  @include hover-underline('fade', 'top');
+}
+
+// Fade Bottom
+.example02 a {
+  @include hover-underline('fade', 'bottom');
+}
+
+// Left to Right
+.example03 a {
+  @include hover-underline('slide', 'left-right');
+}
+
+// Right to Left
+.example04 a {
+  @include hover-underline('slide', 'right-left');
+}
+
+// Left in Right
+.example05 a {
+  @include hover-underline('slide', 'left-in-right');
+}
+
+// Right in Left
+.example06 a {
+  @include hover-underline('slide', 'right-in-left');
+}
+
+// Center
+.example07 a {
+  @include hover-underline('slide', 'center');
+}

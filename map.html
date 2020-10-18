@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>MAPテストページ</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="ja_JP">
+	<!--<link rel="icon" href="./favicon.ico">-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="map_test">
+      <div class="map_block">
+        <iframe class="map_style01" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.378658249157!2d139.77950291531343!3d35.69229843697218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ead35236241%3A0x83736b8dbde1b0ba!2z44CSMTAzLTAwMDIg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL6aas5Zaw55S677yR5LiB55uu77yV4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1600341636636!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="description">
+          <h1><span class="marker">デフォルトの色</span></h1>
+          <p class="css_description"></p>
+        </div>
+      </div>
+
+      <div class="map_block">
+        <iframe class="map_style02" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.378658249157!2d139.77950291531343!3d35.69229843697218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ead35236241%3A0x83736b8dbde1b0ba!2z44CSMTAzLTAwMDIg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL6aas5Zaw55S677yR5LiB55uu77yV4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1600341636636!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="description">
+          <h1><span class="marker02">モノクロ</span></h1>
+          <p class="css_description">filter:grayscale(100%);-webkit-filter:grayscale(100%)</p>
+        </div>
+      </div>
+
+      <div class="map_block">
+        <iframe class="map_style03" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.378658249157!2d139.77950291531343!3d35.69229843697218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ead35236241%3A0x83736b8dbde1b0ba!2z44CSMTAzLTAwMDIg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL6aas5Zaw55S677yR5LiB55uu77yV4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1600341636636!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="description">
+          <h1><span class="marker03">ピンク</span></h1>
+          <p class="css_description">filter:hue-rotate(140deg);-webkit-filter:hue-rotate(300deg)</p>
+        </div>
+      </div>
+
+      <div class="map_block">
+        <iframe class="map_style04" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.378658249157!2d139.77950291531343!3d35.69229843697218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ead35236241%3A0x83736b8dbde1b0ba!2z44CSMTAzLTAwMDIg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL6aas5Zaw55S677yR5LiB55uu77yV4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1600341636636!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="description">
+          <h1><span class="marker04">ブラック</span></h1>
+          <p class="css_description">filter:invert(80%);-webkit-filter:invert(80%)</p>
+        </div>
+      </div>
+    </section>
+  </div>
+    <script src="js/anime.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

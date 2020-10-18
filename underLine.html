@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>アンダーライン | テストページ</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="ja_JP">
+	<!--<link rel="icon" href="./favicon.ico">-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <main class="underLine">
+    <div class="wrapper">
+
+      <div class="text-block">
+        <p>アンダーライン mixin</p>
+      </div>
+
+      <div class="top-block">
+        <div class="block_inner">
+          <p class="description left">
+            $type（タイプ）<br>
+            $dir（方向）<br>
+            $weight（ラインウェイト）<br>
+            $color（ラインカラー）<br>
+          </p>
+          <p class="description left">
+            .example01　{ <br>
+              @include hover-underline('fade', 'top', 4px, #aaa); <br>
+            }
+          </p>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <p>Fade Top</p>
+        <p class="description">@include hover-underline('fade', 'top');</p>
+          <ul>
+            <li><a href="#" class="example01">menu01</a></li>
+            <li><a href="#" class="example01">menu02</a></li>
+            <li><a href="#" class="example01">menu03</a></li>
+          </ul>
+      </div>
+
+        <div class="item-block">
+          <p>Fade Bottom</p>
+          <p class="description">@include hover-underline('fade', 'bottom');</p>
+          <ul class="example02">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+          </ul>
+        </div>
+
+        <div class="item-block">
+          <p>Left to Right</p>
+          <p class="description">@include hover-underline('slide', 'left-right');</p>
+          <ul class="example03">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+          </ul>
+        </div>
+
+        <div class="item-block">
+          <p>Right to Left</p>
+          <p class="description">@include hover-underline('slide', 'right-left');</p>
+          <ul class="example04">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+          </ul>
+        </div>
+
+        <div class="item-block">
+          <p>Left in Right</p>
+          <p class="description">@include hover-underline('slide', 'left-in-right');</p>
+          <ul class="example05">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+          </ul>
+        </div>
+
+        <div class="item-block">
+          <p>Right in Left</p>
+          <p class="description">@include hover-underline('slide', 'right-in-left');</p>
+          <ul class="example06">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+          </ul>
+        </div>
+
+        <div class="item-block">
+          <p>Center</p>
+          <p class="description">@include hover-underline('slide', 'center');</p>
+          <ul class="example07">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+          </ul>
+        </div>
+    </div>
+  </main>
+  <script src="js/anime.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

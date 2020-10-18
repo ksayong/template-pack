@@ -1,0 +1,112 @@
+
+/* =======================================================
+
+  deco
+
+======================================================== */
+
+.deco {
+
+  .text-block {
+    margin :3em;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+
+.txt_block {
+  width: 50%;
+  margin: 0 auto;
+}}
+
+.deco_text {
+  padding:1em 0;
+}
+
+.wavyLine01 {
+  padding: 1em;
+  border: 3px solid #7a84be;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+  transition: 0.8s;
+  &:hover {
+    background-color: #d2dafa;
+  }
+}
+
+.wavyLine02 {
+  padding: 1em;
+  border: 3px solid #ec7f8e;
+  border-radius: 4em 6.7em 12em 1.7em/4.7em 3em 3.3em 7.1em;
+  transition: 0.8s;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border: 3px solid #fde8eb;
+    border-radius: 4em 6.7em 12em 1.7em/4.7em 3em 3.3em 7.1em;
+    top: 11px;
+    left: 7px;
+    background-color: #fde8eb;
+    z-index: -100;
+
+    &:hover {
+      top:0;
+      left: 0;
+      transform: translateY(3px);
+    }
+  }
+}
+
+.wavyLine03 {
+  padding: 1em;
+  border: 3px solid #7abe99;
+  border-radius: 11em 2.2em 5em 2.2em/.4em 7em 0.7em 5em;
+  transition: 0.8s;
+  &:hover {
+    background-color: #ddf0e6;
+  }
+}
+
+.circle {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  line-height: 1;
+  border-radius: 50%;
+  background: antiquewhite;
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
+
+.circle_line {
+  margin: 0 auto;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: -20px;
+    width: 233px;
+    height: 162px;
+    height: 155px;
+    border: 2px solid black;
+    border-radius: 66% 21% 44% 50%/50%;
+  }
+}
+
+.txt_block-line{
+  margin: 100px auto;
+  width: 50%;
+  height: 500px;
+  padding: 50px;
+  background: #efefef;
+  border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+}
